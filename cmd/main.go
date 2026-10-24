@@ -3,12 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	var name string
-	var age int
-	fmt.Println("Enter your name: ")
-	fmt.Scan(&name)
-	fmt.Println("Enter your age: ")
-	fmt.Scan(&age)
 
-	fmt.Println(name, age)
+	var a int
+	var b int
+	var c int
+	fmt.Scan(&a) // считаем переменную 'a' с консоли
+	fmt.Scan(&b) // считаем переменную 'b' с консоли
+
+	a = a * a
+	b = b * b
+	c = a + b
+	fmt.Println(c)
 }
